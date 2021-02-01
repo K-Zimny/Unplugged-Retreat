@@ -111,12 +111,29 @@ textarea {
     width:90%;
   }
 
+  h2{
+    margin: 50px 0;
+  }
+
+  h3{
+    margin: 0 0 15px 0; 
+  }
+
+  h4{
+    margin: 0 0 10px 0;
+  }
+
+  p{
+    margin: 0 0 50px 0;
+  }
+
   /* ---------------mobile-styles--------------- */
 
   /* nav-styles */
 
   nav{
-    width:100%;
+    width: 60%;
+    margin: 0 20%;
   }
 
   nav ul{
@@ -139,15 +156,38 @@ textarea {
     margin: 0;
   }
 
+  /* feature items styles */
+
+  .features-items article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .features-item-description{
+    text-align: center;
+    width: 45%;
+
+  }
+
   /* footer-styles */
 
+  footer .content-wrapper{
+    width:55%;
+    margin: 50px 0;
+  }
   .footer-content,
   .copyright{
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
+  }
+
+  .contact,
+  .footer-content{
+    text-align: center;
   }
 
   /* ----------About page---------- */
@@ -155,6 +195,23 @@ textarea {
   .contact-section .content-wrapper{
     justify-content: flex-start;
   }
+
+  .mission h2{
+    margin: 50px 0 20px 0;
+  }
+
+  .mission p{
+    margin: 0 0 20px 0;
+  }
+
+  .contact-section h2{
+    margin: 50px 0 10px 0;
+  }
+
+  .contact-section p{
+    margin: 0 0 20px 0;
+  }
+  
 
   /* ----------FAQ page---------- */
 
