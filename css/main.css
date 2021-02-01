@@ -85,7 +85,82 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+   ========================================================================== *
+
+   /* base-styles */
+
+  body,
+  main,
+  header,
+  footer,
+  .content-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  body,
+  .content-wrapper{
+    width:100%;
+  }
+
+  main,
+  header,
+  footer {
+    width:90%;
+  }
+
+  /* ---------------mobile-styles--------------- */
+
+  /* nav-styles */
+
+  nav{
+    width:100%;
+  }
+
+  nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding:0;
+  }
+
+  nav ul li{
+    list-style: none;
+  }
+
+  /* form styles */
+
+  input{
+    width:100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* footer-styles */
+
+  .footer-content,
+  .copyright{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  /* ----------About page---------- */
+
+  .contact-section .content-wrapper{
+    justify-content: flex-start;
+  }
+
+  /* ----------FAQ page---------- */
+
+  .faq .content-wrapper{
+    justify-content: flex-start;
+  }
 
 /* ==========================================================================
    Helper classes
