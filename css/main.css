@@ -224,6 +224,10 @@ textarea {
     justify-content: flex-start;
   }
 
+  .faq .content-wrapper h2{
+    width: 100%;
+  }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -402,6 +406,17 @@ textarea {
   address div{
    width: 45%;
   }
+
+  /* ----------FAQ page---------- */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content{
+    width: 45%;
+  }
+
 
 }
 
