@@ -192,23 +192,28 @@ textarea {
 
   /* ----------About page---------- */
 
-  .contact-section .content-wrapper{
+  .contact-section {
+    width: 100%;
+  }
+
+  .contact-section .content-wrapper {
     justify-content: flex-start;
   }
 
-  .mission h2{
+  .mission h2 {
     margin: 50px 0 20px 0;
   }
 
-  .mission p{
+  .mission p {
     margin: 0 0 20px 0;
   }
 
-  .contact-section h2{
+  .contact-section h2 {
     margin: 50px 0 10px 0;
+    width: 100%;
   }
 
-  .contact-section p{
+  .contact-section p {
     margin: 0 0 20px 0;
   }
   
@@ -371,6 +376,31 @@ textarea {
 
   .footer-content{
     width: 50%;
+  }
+
+  /* ----------About page---------- */
+
+  .mission-content {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+  
+  address {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  address div{
+   width: 45%;
   }
 
 }
