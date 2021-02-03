@@ -188,12 +188,13 @@ textarea {
 
   /* footer-styles */
 
-  footer .content-wrapper{
+  footer .content-wrapper {
     width:55%;
     margin: 50px 0;
   }
+
   .footer-content,
-  .copyright{
+  .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,9 +203,24 @@ textarea {
   }
 
   .contact,
-  .footer-content{
+  .footer-content {
     text-align: center;
   }
+
+    /* social styles */
+
+    .social {
+      width: 100%;
+    }
+  
+    .social-icons {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .social-icons p{
+      margin: 0 20px;
+    }
 
   /* ----------About page---------- */
 
@@ -391,6 +407,7 @@ textarea {
 
   footer .content-wrapper {
     justify-content: space-around;
+    align-items: flex-start;
     width: 100%;
   }
 
@@ -449,7 +466,7 @@ textarea {
   article {
     width: 33%;
   }
-  
+
 }
 
 /* ==========================================================================
