@@ -106,6 +106,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    color: #e2e3ed;
 }
 
 ul,
@@ -168,7 +169,7 @@ body,
 main,
 header,
 footer {
-    width: 90%;
+    width: 100%;
 }
 
 h1 {
@@ -200,8 +201,18 @@ p {
 
 /* header styles */
 
+header {
+    width: 100%;
+    background-color: #202322;
+}
+
 .hero-area {
     width: 100%;
+}
+
+.header-divider {
+    width: 100%;
+    /* border-top: solid 1px #3a3a3a; */
 }
 
 
@@ -228,8 +239,16 @@ nav ul li {
 /* form styles */
 
 aside {
-    width: 100%;
+    /* width: 100%; */
+    padding: 0 5% 50px 5%;
+    background-color: #527158;
 }
+
+
+/* 
+aside .content-wrapper {
+    width: 90%;
+} */
 
 input {
     width: 100%;
@@ -267,6 +286,11 @@ input[type=button] {
 
 /* feature items styles */
 
+.features {
+    background-color: #0e0702;
+    padding: 0 5%;
+}
+
 .features-items article {
     display: flex;
     flex-flow: row wrap;
@@ -280,7 +304,20 @@ input[type=button] {
 }
 
 
+/* review styles */
+
+.reviews {
+    background-color: #2a423a;
+    padding: 0 5%;
+}
+
+
 /* footer-styles */
+
+footer {
+    background-color: #202322;
+    padding: 0 5%;
+}
 
 footer .content-wrapper {
     width: 55%;
