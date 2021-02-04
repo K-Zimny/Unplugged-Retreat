@@ -115,23 +115,27 @@ ol {}
 a {
     color: #e2e3ed;
     text-decoration: none;
-    font-size: 1.125;
+    font-size: 1.125em;
+    font-weight: normal;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.25em;
+    font-weight: normal;
 }
 
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
+    font-weight: normal;
 }
 
 h3,
 h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
+    font-weight: normal;
 }
 
 p {
@@ -143,9 +147,19 @@ img {}
 
 figure {}
 
-address {}
+address {
+    font-size: .875em;
+    font-style: normal;
+    margin-bottom: 50px;
+}
 
-.content-wrapper {}
+address p {
+    margin: 5px 0;
+}
+
+.content-wrapper {
+    padding: 0 5%;
+}
 
 
 /* base-styles */
@@ -161,10 +175,11 @@ footer,
     flex-flow: row wrap;
 }
 
-body,
+
+/* body,
 .content-wrapper {
     width: 100%;
-}
+} */
 
 main,
 header,
@@ -188,7 +203,7 @@ h3 {
 }
 
 h4 {
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
 }
 
 p {
@@ -206,8 +221,13 @@ header {
     background-color: #202322;
 }
 
-.hero-area {
+header .content-wrapper {
     width: 100%;
+}
+
+.hero-area {
+    /* width: 100%; */
+    padding: 0 5%;
 }
 
 .header-divider {
@@ -233,6 +253,11 @@ nav ul {
 
 nav ul li {
     list-style: none;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 
@@ -281,6 +306,10 @@ input[type=button] {
     border: none;
     text-align: center;
     text-transform: uppercase;
+}
+
+aside p {
+    margin-bottom: 0;
 }
 
 
@@ -357,12 +386,11 @@ footer .content-wrapper {
 
 /* ----------About page---------- */
 
-.contact-section {
-    width: 100%;
-}
 
-.contact-section .content-wrapper {
-    justify-content: flex-start;
+/* mission section */
+
+.mission {
+    background-color: #527158;
 }
 
 .mission h2 {
@@ -371,6 +399,17 @@ footer .content-wrapper {
 
 .mission p {
     margin: 0 0 20px 0;
+}
+
+
+/* contact section */
+
+.contact-section {
+    background-color: #2a423a;
+}
+
+.contact-section .content-wrapper {
+    justify-content: flex-start;
 }
 
 .contact-section h2 {
