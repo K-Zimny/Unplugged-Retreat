@@ -150,7 +150,7 @@ figure {}
 address {
     font-size: .875em;
     font-style: normal;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 address p {
@@ -225,11 +225,6 @@ header .content-wrapper {
     width: 100%;
 }
 
-.hero-area {
-    /* width: 100%; */
-    padding: 0 5%;
-}
-
 .header-divider {
     width: 100%;
     /* border-top: solid 1px #3a3a3a; */
@@ -265,8 +260,12 @@ nav a {
 
 aside {
     /* width: 100%; */
-    padding: 0 5% 50px 5%;
+    padding-bottom: 50px;
     background-color: #527158;
+}
+
+aside .form {
+    width: 100%;
 }
 
 
@@ -317,7 +316,6 @@ aside p {
 
 .features {
     background-color: #0e0702;
-    padding: 0 5%;
 }
 
 .features-items article {
@@ -337,7 +335,6 @@ aside p {
 
 .reviews {
     background-color: #2a423a;
-    padding: 0 5%;
 }
 
 
@@ -360,6 +357,10 @@ footer .content-wrapper {
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
+}
+
+.contact {
+    margin-bottom: 25px;
 }
 
 .contact,
@@ -417,12 +418,20 @@ footer .content-wrapper {
     width: 100%;
 }
 
+.contact-section h4 {
+    margin-bottom: 15px;
+}
+
 .contact-section p {
     margin: 0 0 20px 0;
 }
 
 
 /* ----------FAQ page---------- */
+
+.faq {
+    background-color: #527158;
+}
 
 .faq .content-wrapper {
     justify-content: flex-start;
