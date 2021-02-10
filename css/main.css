@@ -109,9 +109,6 @@ body {
     color: #e2e3ed;
 }
 
-ul,
-ol {}
-
 a {
     color: #e2e3ed;
     text-decoration: none;
@@ -595,6 +592,28 @@ footer .content-wrapper {
 
 @media only screen and (min-width: 768px) {
     /***** Tablet styles here *****/
+
+    a {
+        font-size: 1.35;
+    }
+    
+    h1 {
+        font-size: 2.25em;
+    }
+    
+    h2 {
+        font-size: 1.875em;
+    }
+    
+    h3,
+    h4 {
+        font-size: 1.35em;
+    }
+    
+    p {
+        font-size: .9em;
+    }
+
     /* header styles */
     header .content-wrapper {
         justify-content: space-between;
@@ -693,6 +712,29 @@ footer .content-wrapper {
 }
 
 @media only screen and (min-width: 1200px) {
+
+    a {
+        font-size: 1.35;
+    }
+    
+    h1 {
+        font-size: 2.25em;
+    }
+    
+    h2 {
+        font-size: 1.875em;
+    }
+    
+    h3,
+    h4 {
+        font-size: 1.35em;
+    }
+    
+    p {
+        font-size: 1em;
+        line-height: 25px;
+    }
+
     /* aside (form) styles */
     aside {
         width: 100%;
