@@ -104,7 +104,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1em;
     color: #e2e3ed;
 }
@@ -120,26 +120,26 @@ a {
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 2.25em;
     font-weight: normal;
 }
 
 h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.875em;
     font-weight: normal;
 }
 
 h3,
 h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.125em;
     font-weight: normal;
 }
 
 p {
-    font-size: .875em;
+    font-size: 0.875em;
     line-height: 18px;
 }
 
@@ -152,7 +152,7 @@ figure {
 }
 
 address {
-    font-size: .875em;
+    font-size: 0.875em;
     font-style: normal;
     margin-bottom: 25px;
 }
@@ -271,23 +271,24 @@ nav a {
 /* hero area */
 
 .hero-area {
-    background-image: url("../img/jake-melara-30679-unsplash.jpg");
+    background-image: url("../img/jake-melara-30679-unsplash-size-edit.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 60%;
     height: 500px;
+    width: 100%;
 }
 
 
 /* form styles */
 
 aside {
-    /* width: 100%; */
+    width: 100%;
     padding-bottom: 50px;
     background-color: #527158;
 }
 
-aside .form {
+.form {
     width: 100%;
 }
 
@@ -308,7 +309,7 @@ aside .form-description {
     margin-top: 30px;
 }
 
-input[type=text] {
+input[type="text"] {
     box-sizing: border-box;
     width: 100%;
     color: #2a423a;
@@ -316,12 +317,12 @@ input[type=text] {
     padding: 1em;
 }
 
-input[type=button] {
+input[type="button"] {
     width: 100%;
     padding: 20px 0;
     margin-top: 20px;
     background-color: #2a423a;
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
     font-weight: 500;
     font-size: 1.125em;
     color: #e2e3ed;
@@ -338,7 +339,10 @@ aside p {
 /* feature items styles */
 
 .features {
-    background-color: #0e0702;
+    background-image: url(../img/rawpixel-800820-unsplash1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .features-items article {
@@ -358,6 +362,14 @@ aside p {
 
 .reviews {
     background-color: #2a423a;
+}
+
+.reviews .content-wrapper {
+    justify-content: flex-start;
+}
+
+.reviews article {
+    width: 100%;
 }
 
 .reviews figure {
@@ -452,6 +464,15 @@ footer .content-wrapper {
 
 .contact-section p {
     margin: 0 0 20px 0;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+ 
+.map iframe {
+    width: 100%;
 }
 
 
@@ -600,13 +621,27 @@ footer .content-wrapper {
         width: 50%;
     }
     /* reviews section */
-    /* ------------------------------------- */
-    /* NEED TO RETURN AND FIX THIS SECTION */
-    /* ------------------------------------- */
+    .reviews {
+        padding-bottom: 80px;
+    }
+    .reviews article {
+        width: 100%;
+    }
+    .reviews figure {
+        margin-bottom: 20px;
+        width: 48%;
+    }
+    .reviews-content {
+        width: 48%;
+    }
     .reviews article {
         display: flex;
         justify-content: space-between;
         flex-flow: row wrap;
+    }
+    .reviews h2 {
+        width: 66%;
+        margin: 100px 0 20px;
     }
     .reviews article h3 {
         text-align: justify;
@@ -654,9 +689,22 @@ footer .content-wrapper {
     aside {
         width: 100%;
     }
+    aside .content-wrapper {
+        justify-content: space-evenly;
+    }
+    .form-description {
+        width: 25%;
+    }
+    .form {
+        width: 25%;
+    }
     /* features styles  */
-    article {
+    .features article {
         flex-basis: 33%;
+    }
+    /* reviews section */
+    .reviews h2 {
+        margin: 100px 0;
     }
 }
 
