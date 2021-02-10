@@ -143,6 +143,14 @@ p {
     line-height: 18px;
 }
 
+.social-icons i {
+    font-size: 2.75em;
+
+}
+.features i {
+	font-size: 3.75em;
+}
+
 img {
     width: 100%;
 }
@@ -347,7 +355,7 @@ aside p {
 
 .features-items article {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
