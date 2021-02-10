@@ -97,24 +97,28 @@ textarea {
    Author's custom styles
    ========================================================================== *
 
-/* General Styles */
+/********** General Styles **********/
 
 html {
     font-size: 16px;
 }
 
 body {
+    background: #313534;
+    color: #e2e3ed;
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
-    color: #e2e3ed;
+    margin: auto;
+    max-width: 1400px;
 }
 
-a {
-    color: #e2e3ed;
-    text-decoration: none;
-    font-size: 1.125em;
-    font-weight: normal;
+.content-wrapper {
+    padding: 0 5%;
 }
+
+/* 
+ Text styles  
+*/
 
 h1 {
     font-family: "Poppins", sans-serif;
@@ -140,6 +144,17 @@ p {
     line-height: 18px;
 }
 
+a {
+    color: #e2e3ed;
+    font-size: 1.125em;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/*
+ Icon styles  
+*/
+
 .social-icons i {
     font-size: 2.75em;
 
@@ -148,6 +163,10 @@ p {
 	font-size: 3.75em;
 }
 
+/* 
+ Image styles  
+ */
+
 img {
     width: 100%;
 }
@@ -155,6 +174,10 @@ img {
 figure {
     margin: 0;
 }
+
+/* 
+Address styles  
+*/
 
 address {
     font-size: 0.875em;
@@ -166,29 +189,20 @@ address p {
     margin: 5px 0;
 }
 
-.content-wrapper {
-    padding: 0 5%;
-}
 
 
-/* base-styles */
+/*********** base-styles ***********/
 
 body,
 main,
 header,
 footer,
 .content-wrapper {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
-
-
-/* body,
-.content-wrapper {
-    width: 100%;
-} */
 
 main,
 header,
@@ -202,8 +216,8 @@ h1 {
 }
 
 h2 {
-    margin: 50px 0;
     justify-content: flex-start;
+    margin: 50px 0;
     width: 100%;
 }
 
@@ -223,90 +237,84 @@ p {
 /* ---------------mobile-styles--------------- */
 
 
-/* header styles */
+/* 
+ header styles 
+*/
 
 header {
-    width: 100%;
     background-color: #202322;
+    width: 100%;
 }
 
 header .content-wrapper {
     width: 100%;
 }
 
-.header-divider {
-    width: 100%;
-    border-top: solid 1px #3a3a3a;
-}
-
 header figure {
-    width: 60%;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     margin: 10px 0;
+    width: 60%;
 }
 
-
-/* nav-styles */
+/* 
+ nav-styles 
+*/
 
 nav {
     width: 60%;
 }
 
 nav ul {
+    align-items: center;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: center;
     padding: 0;
 }
 
-nav ul li {
+nav li {
     list-style: none;
 }
 
 nav a {
-    text-transform: uppercase;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-
-/* hero area */
+/* 
+ hero area 
+*/
 
 .hero-area {
     background-image: url("../img/jake-melara-30679-unsplash-size-edit.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 500px;
     width: 100%;
 }
 
-
-/* form styles */
+/* 
+ form styles 
+*/
 
 aside {
-    width: 100%;
-    padding-bottom: 50px;
     background-color: #527158;
+    padding-bottom: 50px;
+    width: 100%;
 }
 
 .form {
     width: 100%;
 }
 
-
-/* 
-aside .content-wrapper {
-    width: 90%;
-} */
-
 input {
-    width: 100%;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 aside .form,
@@ -316,45 +324,46 @@ aside .form-description {
 
 input[type="text"] {
     box-sizing: border-box;
-    width: 100%;
     color: #2a423a;
     font-style: italic;
     padding: 1em;
+    width: 100%;
 }
 
 input[type="button"] {
-    width: 100%;
-    padding: 20px 0;
-    margin-top: 20px;
     background-color: #2a423a;
-    font-family: "Poppins", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 1.125em;
-    color: #e2e3ed;
     border: none;
+    color: #e2e3ed;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-size: 1.125em;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 20px 0;
     text-align: center;
     text-transform: uppercase;
+    width: 100%;
 }
 
 aside p {
     margin-bottom: 0;
 }
 
-
-/* feature items styles */
+/* 
+ Feature items styles 
+*/
 
 .features {
     background-image: url(../img/rawpixel-800820-unsplash1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .features-items article {
+    align-items: center;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .features-item-description {
@@ -362,8 +371,9 @@ aside p {
     width: 45%;
 }
 
-
-/* review styles */
+/* 
+ review styles 
+*/
 
 .reviews {
     background-color: #2a423a;
@@ -381,8 +391,9 @@ aside p {
     margin-bottom: 20px;
 }
 
-
-/* footer-styles */
+/* 
+ footer-styles 
+*/
 
 footer {
     background-color: #202322;
@@ -390,16 +401,16 @@ footer {
 }
 
 footer .content-wrapper {
-    width: 55%;
     margin: 50px 0;
+    width: 55%;
 }
 
 .footer-content,
 .copyright {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     width: 100%;
 }
 
@@ -412,8 +423,9 @@ footer .content-wrapper {
     text-align: center;
 }
 
-
-/* social styles */
+/* 
+ social styles 
+*/
 
 .social {
     width: 100%;
@@ -432,7 +444,9 @@ footer .content-wrapper {
 /* ----------About page---------- */
 
 
-/* mission section */
+/* 
+ mission section 
+*/
 
 .mission {
     background-color: #527158;
@@ -446,8 +460,9 @@ footer .content-wrapper {
     margin: 0 0 20px 0;
 }
 
-
-/* contact section */
+/* 
+ contact section 
+*/
 
 .contact-section {
     background-color: #2a423a;
@@ -472,8 +487,8 @@ footer .content-wrapper {
 }
 
 .map {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
  
 .map iframe {
@@ -593,125 +608,9 @@ footer .content-wrapper {
 @media only screen and (min-width: 768px) {
     /***** Tablet styles here *****/
 
-    a {
-        font-size: 1.35;
-    }
-    
-    h1 {
-        font-size: 2.25em;
-    }
-    
-    h2 {
-        font-size: 1.875em;
-    }
-    
-    h3,
-    h4 {
-        font-size: 1.35em;
-    }
-    
-    p {
-        font-size: .9em;
-    }
-
-    /* header styles */
-    header .content-wrapper {
-        justify-content: space-between;
-    }
-    header figure {
-        width: 30%;
-    }
-    nav {
-        width: 20%;
-        margin: 0;
-    }
-    nav a {
-        font-size: 1em;
-    }
-    /* aside (form) styles */
-    aside .content-wrapper {
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .form-description,
-    .form {
-        width: 45%;
-    }
-    /* features section */
-    .features .features-items {
-        display: flex;
-        justify-content: space-between;
-        flex-flow: row wrap;
-        align-items: center;
-    }
-    article {
-        width: 50%;
-    }
-    /* reviews section */
-    .reviews {
-        padding-bottom: 80px;
-    }
-    .reviews article {
-        width: 100%;
-    }
-    .reviews figure {
-        margin-bottom: 20px;
-        width: 48%;
-    }
-    .reviews-content {
-        width: 48%;
-    }
-    .reviews article {
-        display: flex;
-        justify-content: space-between;
-        flex-flow: row wrap;
-    }
-    .reviews h2 {
-        width: 66%;
-        margin: 100px 0 20px;
-    }
-    .reviews article h3 {
-        text-align: justify;
-    }
-    /* footer section */
-    footer .content-wrapper {
-        justify-content: space-around;
-        align-items: flex-start;
-        width: 100%;
-    }
-    .footer-content {
-        width: 50%;
-    }
-    /* ----------About page---------- */
-    .mission-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-flow: row wrap;
-    }
-    .mission-content p {
-        width: 45%;
-    }
-    address {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-flow: row wrap;
-        width: 100%;
-    }
-    address div {
-        width: 45%;
-    }
-    /* ----------FAQ page---------- */
-    .faq .content-wrapper {
-        justify-content: space-between;
-    }
-    .faq-content {
-        width: 45%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
+    /* 
+     Font styles  
+    */
 
     a {
         font-size: 1.35;
@@ -735,6 +634,162 @@ footer .content-wrapper {
         line-height: 25px;
     }
 
+    /*
+     header styles
+    */
+
+    header .content-wrapper {
+        justify-content: space-between;
+    }
+
+    header figure {
+        width: 30%;
+    }
+
+    nav {
+        width: 20%;
+        margin: 0;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+
+    /*
+     aside (form) styles 
+    */
+
+    aside .content-wrapper {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .form-description,
+    .form {
+        width: 45%;
+    }
+
+    /*
+     features section 
+    */
+
+    .features .features-items {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    article {
+        width: 50%;
+    }
+
+    /*
+     reviews section 
+    */
+
+    .reviews {
+        padding-bottom: 20px;
+    }
+
+    .reviews article {
+        width: 100%;
+    }
+
+    .reviews figure {
+        margin-bottom: 20px;
+        width: 48%;
+    }
+
+    .reviews-content {
+        width: 48%;
+    }
+
+    .reviews article {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .reviews h2 {
+        width: 66%;
+    }
+
+    .reviews article h3 {
+        text-align: justify;
+    }
+
+    /*
+     footer section 
+    */
+
+    footer .content-wrapper {
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .footer-content {
+        width: 50%;
+    }
+
+    /* ----------About page---------- */
+
+    .mission-content {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .mission-content p {
+        width: 45%;
+    }
+
+    address {
+        width: 100%;
+    }
+
+    address div {
+        width: 45%;
+    }
+    /* ----------FAQ page---------- */
+
+    .faq .content-wrapper {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .faq-content {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    Font styles 
+
+    a {
+        font-size: 1.35;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 1.875em;
+    }
+    
+    h3,
+    h4 {
+        font-size: 1.35em;
+    }
+    
+    p {
+        font-size: 1.25em;
+        line-height: 30px;
+    }
+
     /* aside (form) styles */
     aside {
         width: 100%;
@@ -751,10 +806,6 @@ footer .content-wrapper {
     /* features styles  */
     .features article {
         flex-basis: 33%;
-    }
-    /* reviews section */
-    .reviews h2 {
-        margin: 100px 0;
     }
 }
 
